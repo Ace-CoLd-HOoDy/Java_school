@@ -16,4 +16,13 @@ public Booking(String clientName, int roomNumber, LocalDate startDate, LocalDate
     this.startDate = startDate;
     this.endDate = endDate;
 }
+
+public int getRoomNumber(){
+    return roomNumber;
+}
+
+@Override
+public String toString(){
+    return "Booking ID: "+bookingId", Client: "+clientName", Room: "+roomNumber", Dates: "+startDate" to "+endDate
+}
 }
